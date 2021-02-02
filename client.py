@@ -5,7 +5,7 @@ import threading
 class Client:
     def __init__(self):
         self.client_sock = socket(AF_INET, SOCK_DGRAM)
-        self.server_address = ('localhost', 8080)
+        self.server_address = ('localhost', 8080) # put the Server's IP on "localhost"
         self.name = str(input('name: '))
         self.client_sock.sendto(self.name.encode(), self.server_address)
         self.quit = False

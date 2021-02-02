@@ -14,7 +14,7 @@ class Player:
 class ServerSocket:
     def __init__(self):
         self.server_sock = socket(AF_INET, SOCK_DGRAM)
-        self.server_address = ('localhost', 8080)
+        self.server_address = ('localhost', 8080) # Put your IP on "localhost"
         self.players = []
         self.questions = [
             'Which band composed Eleanor Rigby ', 'Who is considered the father of rock ',
